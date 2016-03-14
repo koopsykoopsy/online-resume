@@ -1,0 +1,159 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    background-color: #282827;
+    color: #DCD8CF;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #E25D33;
+    color: #DCD8CF;
+    border: 0;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    left: 0;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.date-text {
+    text-align: left;
+    font-style: italic;
+    width: 50%;
+    color: #282827;
+    opacity: 0.6;
+    float: left;
+    padding-bottom: 15px;
+}
+
+.location-text {
+    text-align: right;
+    font-style: italic;
+    width: 50%;
+    color: #282827;
+    opacity: 0.6;
+    float: right;
+    padding-bottom: 15px;
+}
+
+.description-text {
+    text-align: left;
+}
+
+/* Dark background, light text */
+.dark-section {
+    height: 100%;
+    position: relative;
+    padding: 100px;
+    text-align: center;
+    background: #282827;
+    color: #DCD8CF;
+}
+
+/* Light background, dark text */
+.light-section {
+    height: 100%;
+    position: relative;
+    padding: 100px;
+    background: #DCD8CF;
+    color: #282827;
+    overflow: auto;
+    text-align: center;
+}
+
+/* Orange background, light text */
+.bright-section {
+    height: 100%;
+    padding: 100px;
+    text-align: center;
+    background: #E25D33;
+    color: #DCD8CF;
+}
+
+/* Getting Next button at the bottom */
+.section-container,
+#button-container {
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#button-container {
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Specifications for certain sections */
+.work-entry {
+    margin-top: 40px;
+}
+
+.education-column {
+    width: 54%;
+    margin: 0 auto;
+}
+
+.education-entry > .date-text,
+.education-entry > .location-text {
+    color: #DCD8CF;
+}
+
+#thesis {
+    margin-top: 100px;
+}
+
+#thesis-dates {
+    font-style: italic;
+    color: #DCD8CF;
+    opacity: 0.6;
+    padding: 10px auto;
+}
+
+#abstract {
+    text-align: left;
+}
+
+#abstract-title {
+    color: #E25D33;
+}
+
+
+.project-entry > .date-text,
+.project-entry > .location-text {
+    text-align: center;
+    width: 100%;
+}
+
