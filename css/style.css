@@ -1,0 +1,637 @@
+
+/**************************/
+/* Main element types */
+/**************************/
+
+html,
+body,
+div,
+ul,
+li
+{
+  padding:0;
+  margin:0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #E25D33;
+  line-height: 48px;
+  display: inline;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  display: block;
+  color: #E25D33;
+  width: 100%;
+  line-height: 48px;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  color: black;
+  line-height: 22px;
+  padding: 10px 5%;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #282827;
+  line-height: 17px;
+  padding: 10px 5%;
+}
+
+h5, h6 {
+  padding: 10px 5%;
+}
+
+ul{
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+/**************************/
+/* Section backgrounds and colors */
+/**************************/
+
+/* Dark background, light text */
+.dark-section {
+    height: 100%;
+    position: relative;
+    padding: 100px;
+    text-align: center;
+    background: #282827;
+    color: #DCD8CF;
+}
+
+/* Light background, dark text */
+.light-section {
+    height: 100%;
+    position: relative;
+    padding: 100px;
+    background: #DCD8CF;
+    color: #282827;
+    overflow: auto;
+    text-align: center;
+}
+
+/* Orange background, light text */
+.bright-section {
+    height: 100%;
+    padding: 100px;
+    text-align: center;
+    background: #E25D33;
+    color: #DCD8CF;
+}
+
+/**************************/
+/* NEXT SECTION BUTTON AND NAVBAR */
+/**************************/
+
+.navbar {
+    background-color: #282827;
+    color: #DCD8CF;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #E25D33;
+    color: #DCD8CF;
+    border: 0;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    left: 0;
+}
+
+/* Getting next section button at the bottom */
+.section-container,
+#button-container {
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#button-container {
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Scoops up the navbar options into a little menu */
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -o-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/**************************/
+/* UPDATES TO ELEMENTS USED THROUGHOUT */
+/* i.e. Dates, locations, titles, and descriptions */
+/**************************/
+
+.white-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #DCD8CF;
+}
+.date-text {
+    text-align: left;
+    font-style: italic;
+    width: 50%;
+    color: #282827;
+    opacity: 0.6;
+    float: left;
+    padding-bottom: 15px;
+}
+
+.location-text {
+    text-align: right;
+    font-style: italic;
+    width: 50%;
+    color: #282827;
+    opacity: 0.6;
+    float: right;
+    padding-bottom: 15px;
+}
+
+.description-text {
+    text-align: left;
+}
+
+/* Overriding bootstrap styling to make my links underlined and correctly colored */
+
+a {
+  color: #E25D33;
+  text-decoration: none;
+}
+
+.link {
+  color: #DCD8CF;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+/* .GENERAL-TITLE shared for most title types */
+
+.GENERAL-TITLE {
+  color: #E25D33;
+  padding: 10px;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  -o-transition-duration: all 0.5s;
+  -moz-transition-duration: all 0.5s;
+  -webkit-transition-duration: all 0.5s;
+}
+
+.GENERAL-TITLE:hover {
+  background-color: #FFA386;
+}
+
+/* Pumping up the subtitles of the major sections */
+
+#work-employer,
+#education-name,
+#project-name {
+  color: #E25D33;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+/**************************/
+/* BIO PAGE + CONTACT PAGE */
+/**************************/
+
+/*  Top of Welcome Message */
+
+.welcome-message {
+  font-family: 'Slabo 27px', serif;
+  font-weight: bolder;
+  font-size: 60px;
+  color: #DCD8CF;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.emphasis {
+  color: #E25D33;
+}
+
+/*  The righthand skills section on the bio page */
+
+
+#skills-title {
+  color: #E25D33;
+  font-size: 2em;
+  width: 300px;
+  margin: 0 auto 20px auto;
+}
+
+.skills-flex {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding: 10px;
+  width: 100%;
+}
+
+.individualSkill {
+  margin: 0 auto 40px 40px;
+  width: 160px;
+  padding: 0;
+  text-align: center;
+}
+
+/*  The lefthand contacts section on the Bio page */
+
+#contacts-title {
+  color: #E25D33;
+  font-size: 2em;
+  width: 200px;
+  margin: 0 auto 20px auto;
+}
+
+/* Contact container */
+
+#topContacts > #contact {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px 0 15px 0;
+  margin: 0 auto 20px 0;
+  width: 450px;
+  border-radius: 10px;
+}
+
+/* Orange contact label */
+
+#topContacts .contact-label {
+  color: #E25D33;
+  font-size: 16px;
+  width: 150px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+/* Actual contact info */
+
+#topContacts .white-text {
+  text-align: left;
+  width: 230px;
+  margin: 0 auto;
+  padding-left: 80px;
+}
+
+/*  The footer contacts on the Connect page */
+
+/* The "Let's Connect" Title */
+
+#footerContactsTitle {
+  color: #DCD8CF;
+  margin-bottom: 10%;
+}
+
+/* Flex-box */
+
+#footerContacts {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+/* Contact container */
+
+#footerContacts > #contact {
+  width: 200px;
+  padding: 10px;
+  margin: 0 10px;
+  flex-grow: 2;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  -o-transition-duration: all 0.5s;
+  -moz-transition-duration: all 0.5s;
+  -webkit-transition-duration: all 0.5s;
+}
+
+#footerContacts #contact:hover {
+  background-color: #FFA386;
+}
+
+/* Dark gray contact label */
+
+#footerContacts .contact-label {
+  color: #282827;
+  width: 60px;
+  float: center;
+  padding-right: 5px;
+}
+
+/* Actual contact info */
+
+#footerContacts .white-text {
+  width: 145px;
+  padding-left: 5px;
+}
+
+/* Positioning and building the biopic, back on Bio page */
+
+.biopic-container {
+  width: 220px;
+  display: block;
+  margin: 0 auto;
+}
+
+.biopic {
+  width: 220px;
+  padding: 10px;
+  border-radius: 10%;
+  transition: all 0.5s;
+  -o-transition-duration: all 0.5s;
+  -moz-transition-duration: all 0.5s;
+  -webkit-transition-duration: all 0.5s;
+  -webkit-filter: brightness(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+/**************************/
+/* WORK PAGE SPECIFICATIONS */
+/**************************/
+
+.work-entry {
+    margin-top: 40px;
+}
+
+/**************************/
+/* EDUCATION PAGE SPECIFICATIONS */
+/**************************/
+
+.education-column {
+    width: 54%;
+    margin: 0 auto;
+}
+
+.education-entry > .date-text,
+.education-entry > .location-text {
+    color: #DCD8CF;
+}
+
+#thesis {
+    margin-top: 100px;
+}
+
+#thesis-dates {
+    font-style: italic;
+    color: #DCD8CF;
+    opacity: 0.6;
+    padding: 10px auto;
+}
+
+#abstract {
+    text-align: left;
+}
+
+#abstract-title {
+    color: #E25D33;
+}
+
+/**************************/
+/* PROJECT PAGE SPECIFICATIONS */
+/**************************/
+
+#projects {
+    padding-top: 30px;
+}
+
+.project-entry > .date-text,
+.project-entry > .location-text {
+    text-align: center;
+    width: 100%;
+}
+
+/* Standardizing image sizes and adding brightness and grayscale effects */
+
+.project-image {
+  padding: 10px;
+  height: 120px;
+  -webkit-filter: brightness(60%);
+  filter: brightness(60%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -o-transition-duration: all 0.5s;
+  -moz-transition-duration: all 0.5s;
+  -webkit-transition-duration: all 0.5s;
+  transition: all 0.5s;
+  -o-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  -moz-transform: scale(1,1);
+  -webkit-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.project-image:hover,
+.biopic:hover {
+  opacity: 1;
+  -webkit-box-shadow: 0 0 4px black;
+  -moz-box-shadow: 0 0 4px black;
+  box-shadow: 0 0 4px black;
+  -webkit-filter: brightness(115%);
+  filter: brightness(115%);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  position: relative;
+  -o-transform: scale(1.03,1.03);
+  -ms-transform: scale(1.03,1.03);
+  -moz-transform: scale(1.03,1.03);
+  -webkit-transform: scale(1.05,1.05);
+  transform: scale(1.05,1.05);
+}
+
+/**************************/
+/* MAP PAGE ADJUSTERS */
+/**************************/
+
+#map {
+  display: block;
+  height: 500px;
+  margin: 2.5% 5%;
+  -webkit-filter: brightness(100%);
+}
+
+#mapDiv {
+  height: 600px;
+  width: 100%;
+  padding-bottom: 5%;
+  background-color: #282827;
+}
+
+.infoBubble {
+  text-align: center;
+  color: #DCD8CF;
+  margin: auto;
+  width: 100%;
+  padding-top: 2% 0 4% 0;
+  font-weight: bold;
+}
+  
+
+/**************************/
+/* Media queries to handle various device widths */
+/**************************/
+
+/* Tablet screen optimization */
+
+@media only screen and (max-width: 1024px) {
+  #lets-connect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .btn {
+    display: none;
+  }
+
+  .biopic {
+    width: 200px;
+    padding: 0;
+  }
+
+  .biopic-container {
+    width: 200px;
+
+  }
+  .welcome-message {
+    font-size: 36px;
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  #skills-title,
+  .skills-flex {
+    display: none;
+  }
+
+  #topContacts {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  #topContacts #contact {
+    padding: 0;
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  #topContacts .contact-label {
+    left: 0;
+  }
+
+  #topContacts .white-text {
+    padding-left: 10px;
+    margin: 0;
+  }
+  
+  #education-top {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .education-column {
+    width: 80%;
+    padding: 10px;
+  }
+}
+
+/* Mobile screen optimization */
+
+@media only screen and (max-width: 750px) {
+  .btn {
+    display: none;
+  }
+  
+  .biopic {
+    width: 170px;
+    padding: 0;
+  }
+
+  .welcome-message {
+    font-size: 24px;
+    width: 80%;
+    margin: 5px auto;
+  }
+
+  #skills-title,
+  .skills-flex {
+    display: none;
+  }
+
+  #topContacts {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  #topContacts #contact {
+    padding: 0;
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  #topContacts .contact-label {
+    font-size: 14px;
+    left: 0;
+  }
+
+  #topContacts .white-text {
+    font-size: 14px;
+    padding-left: 35px;
+    margin: 0;
+  }
+
+  #education-top,
+  .education-column {
+    width: 100%;
+    padding: 10px;
+  }
+}
